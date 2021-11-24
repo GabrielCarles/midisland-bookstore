@@ -10,7 +10,6 @@ const BookPage: FC = () => {
     api.books
       .getByWork(location.pathname.replace("/book/", ""))
       .then((resp) => {
-        console.log(resp.data);
         setBooks(resp.data);
       })
       .catch((err) => {
