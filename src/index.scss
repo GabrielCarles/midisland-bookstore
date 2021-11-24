@@ -1,13 +1,63 @@
+@import "/src/components/Header/styles.scss";
+@import "/src/components/ThemeSelector/styles.scss";
+@import "/src/components/BooksGrid/styles.scss";
+@import "/src/components/BookCard/styles.scss";
+@import "/src/components/NavBar/styles.scss";
+@import "/src/components/Favorites/styles.scss";
+@import "/src/components/Footer/styles.scss";
+@import "/src/components/LanguageSelector/styles.scss";
+@import "/src/components/UserSection/styles.scss";
+@import "/src/components/Book/styles.scss";
+@import "/src/components/Authentication/styles.scss";
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
 body {
+  #root {
+    height: 100%;
+  }
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  button {
+    cursor: pointer;
+  }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_content {
+  min-height: calc(100vh - 319px);
+}
+
+.container {
+  position: relative;
+  background-color: #ffffff;
+  &-dark {
+    background-color: #1c1b1b;
+    color: #ffffff;
+    .book_card-actions {
+      button {
+        color: #ffffff;
+        border-color: #ffffff;
+      }
+    }
+  }
 }

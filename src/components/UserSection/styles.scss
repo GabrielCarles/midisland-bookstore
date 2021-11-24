@@ -1,0 +1,53 @@
+.user_section {
+  margin-top: 10px;
+  &-log_info {
+    display: flex;
+    font-size: 14px;
+    font-weight: 200;
+    p {
+      margin: inherit;
+      padding-right: 5px;
+    }
+  }
+  &-theme {
+    margin-top: 8px;
+  }
+  &-log_buttons {
+    margin-top: -1px;
+    button {
+      font-size: 12px;
+      font-weight: 200;
+      color: inherit;
+      background-color: inherit;
+      border: none;
+      border-left: 1px solid;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 200;
+      color: inherit;
+      padding: 0 5px;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      &:last-child {
+        border-left: 1px solid;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .user_section {
+    padding: inherit;
+    &-log_info {
+      font-size: 12px;
+    }
+  }
+}

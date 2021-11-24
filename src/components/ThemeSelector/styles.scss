@@ -1,0 +1,20 @@
+.theme_selector-container {
+  display: flex;
+  height: 30px;
+  button {
+    outline: none;
+    border: none;
+    padding: 9px;
+    &:first-child {
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+}
+.theme_selector-selected {
+  background-color: #a8a7a5;
+}

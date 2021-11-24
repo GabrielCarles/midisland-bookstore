@@ -1,0 +1,29 @@
+@import "/src/components/common/Link/styles.scss";
+
+.nav_container {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  li {
+    display: block;
+  }
+  a {
+    color: inherit;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 460px) {
+  .nav_container {
+    height: 35px;
+    overflow-x: scroll;
+    p {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.footer_container {
+  border-top: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  &-information {
+    border-right: 1px solid;
+    padding: 20px 20px 20px 15px;
+    h1 {
+      font-size: 18px;
+      margin:inherit;
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 0 30px;
+  overflow: visible;
+  max-height: 74px;
+}
+.header-logo {
+  color: #a8a7a5;
+  display: flex;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 60px;
+  border-right: #a8a7a5 solid 1px;
+  p {
+    margin: 0px;
+    &:last-child {
+      font-size: 17px;
+      margin-top: 17px;
+      padding-left: 10px;
+      width: 100px;
+    }
+  }
+}
+.header-actions {
+  display: flex;
+  &_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 350px) {
+  .header-logo{
+    font-size: 30px;
+    p {
+    &:last-child {
+      font-size: 12px;
+      margin-top: 5px;
+      padding-left: 5px;
+      width: 60px;
+    }
+  }
+  }
+}

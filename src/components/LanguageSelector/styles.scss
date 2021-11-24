@@ -1,0 +1,18 @@
+.language_selector {
+  display: flex;
+  align-items: flex-start;
+  svg {
+    padding-right: 6px;
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    &:first-child {
+      border-right: 1px solid;
+    }
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+}

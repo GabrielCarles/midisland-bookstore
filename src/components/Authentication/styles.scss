@@ -1,0 +1,36 @@
+.authentication {
+  display: flex;
+  justify-content: center;
+  &-form {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: left;
+    align-self: center;
+    label {
+      font-weight: 200;
+    }
+    input {
+      margin: 5px 0 10px 0;
+      border: 1px solid;
+      color: inherit;
+      background-color: inherit;
+    }
+    &_submit {
+      border-top: 1px solid;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 3px 10px;
+        border: 1px solid;
+        color: inherit;
+        background-color: inherit;
+        border-color: inherit;
+        border-radius: 0px;
+      }
+    }
+  }
+}
